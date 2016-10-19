@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="67c0ba6c-6657-4a91-bcc0-3feab3868440" name="UML-HW" linkedPackageId="82dee0c8-3907-41da-9b50-805fceebb549" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c4044339-986f-40f0-8387-e38e1968dd87">
+      <profileInstance Id="cffed7dd-ab7d-459d-a568-5de939a36eca" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3fa586c9-f1f9-4dcb-885e-f03273af0333">
+      <profileInstance Id="75411f3c-af99-4214-a2ce-12b3425afeb0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="1eb3fdb7-bc88-4a3d-91fa-e703f6d1f1e9" name="ILeg" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="63fca346-cee8-4bf9-b3b9-8d76cda6861e" />
+        <ownedAttributes>
+          <property Id="a8e161af-256e-4dfa-bd2d-126da1936dc7" name="Height" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="06d88c95-0880-4369-b6be-e8c9df4a1e39" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f8a89bad-53c7-483a-a451-19d7b4d0403b" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f8a89bad-53c7-483a-a451-19d7b4d0403b" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="219328dc-e011-492f-9a0a-13f0922383c1" name="WoodenLeg" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="29da5561-916d-4838-9ec7-59f5ed39b1c8" />
+        <suppliersInternal>
+          <interfaceRealization Id="e5905da7-3bf0-4530-ad70-63be0b8cf740">
+            <interfaceMoniker Id="1eb3fdb7-bc88-4a3d-91fa-e703f6d1f1e9" LastKnownName="ILeg" />
+            <elementDefinition Id="7d74f065-452c-4280-bbd1-6b9ebf92f9c6" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="c87fdcd2-7f27-4925-9f56-f6d8e7f76788" name="Height" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="60adc02a-87dd-4244-8535-0f1c066a02ba" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9f9b300a-3825-469f-a246-dc0cc0626ac5" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c092ed4a-65c2-42dd-856e-a2dacc47f2c8" name="MetalLeg" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b265ab1-6e2b-4b3b-9e32-79aa5fed6c83" />
+        <suppliersInternal>
+          <interfaceRealization Id="1007525f-aa61-495c-96fe-bda612ae83b5">
+            <interfaceMoniker Id="1eb3fdb7-bc88-4a3d-91fa-e703f6d1f1e9" LastKnownName="ILeg" />
+            <elementDefinition Id="a080afb8-a86a-47c3-9eb5-2d698b9e5e72" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="8694b30b-d2b8-40e8-8870-5192ff1d7e86" name="Height" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d9c23f8e-6892-428a-abcf-6540c83290c5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a115acef-5059-4d48-9e6c-cd1caad77094" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="e5891386-e81f-49be-88ca-6c51141ef498" name="IFurniture" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1fe7dc2f-ff7d-40f2-a793-30b3e89ebf2a" />
+        <targetEnds>
+          <association Id="34276c37-5c18-48b5-a8f3-a6a094b65caf" isDerived="false" sourceEndRoleName="IFurniture" targetEndRoleName="ILeg" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="1eb3fdb7-bc88-4a3d-91fa-e703f6d1f1e9" LastKnownName="ILeg" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b964a492-9c10-4584-8b9b-c1b1a2fb2e6e" name="IFurniture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="c51a0950-9199-4380-b27d-b59c5e18d552" name="Lower" value="1">
+                      <elementDefinition Id="d4f643f2-fe84-4f34-be22-4220ed038585" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="18436c33-8fd5-4b48-ac15-667c6c716efa" name="Upper" value="*">
+                      <elementDefinition Id="2f2f4fd9-7919-48cb-b77d-b82a7fb0c6d7" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9e9d6036-adbd-4c83-b0ef-1b50532a3744" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32a1d474-4622-4f9a-ae50-ea0bfccf29ec" name="ILeg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df42c01c-ba31-4a35-9d18-adb508a734ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bd75e08c-577e-4068-b7f6-7189e17d3961" />
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property Id="9dee95f9-3bde-4d52-925b-053923c569ce" name="Length" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d6c8299-3729-4ef3-904b-4ffd03050768" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a6ca9b92-02e6-481b-84d7-ef85c909ae72" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="51e21bbb-ec36-4526-b2b8-00d774ef8aea" name="Width" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c5463f4-114d-45a7-ac18-92bc1359f18b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e2529468-a71d-4016-972f-147077dae65f" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="cb2389e4-25b9-419c-9d2d-9775332db721" name="Weight" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="460fd015-9907-47a2-a744-c564167b05dd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="86ae559a-c4c4-4724-879c-3a5dac7b8ce5" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="7469eafd-72f7-4415-9bd6-5d5b6103ce93" name="Legs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="e881bfb4-03ab-46c9-a6f8-5fdf939ae2a6" name="Lower" value="*">
+                <elementDefinition Id="f274fa07-da6b-4bb3-8f6c-617e3dae1667" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="80247628-ae88-47a6-8b21-ce388bf1edb0" name="Upper" value="*">
+                <elementDefinition Id="bd0a9116-1bf3-481f-a63b-7f341ec8f5c4" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="98533dd2-19a8-42d2-8f2e-83d09f1bc4a7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="df0644e9-96fb-4523-ba03-f3bfc4770e8e" LastKnownName="ILeg" />
+            </type_NamedElement>
+          </property>
+          <property Id="934c1d11-436f-4214-b89a-6d18c6603531" name="Factory" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4a52f017-0397-4729-8699-4bddb65dd085" />
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a6ca9b92-02e6-481b-84d7-ef85c909ae72" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="86ae559a-c4c4-4724-879c-3a5dac7b8ce5" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e2529468-a71d-4016-972f-147077dae65f" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df0644e9-96fb-4523-ba03-f3bfc4770e8e" name="ILeg" isAbstract="false" isLeaf="false" cachedFullName="TestProject::ILeg">
+        <elementDefinition Id="63fca346-cee8-4bf9-b3b9-8d76cda6861e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d4780e45-3e5a-4e2f-a81d-80b5e553b2c3" name="Factory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b7ef185e-ef48-49ac-a26e-72e518ac59c0" />
+        <suppliersInternal>
+          <dependency Id="311b682d-0340-45f9-8ca6-b204b6cf5eac">
+            <interfaceMoniker Id="e5891386-e81f-49be-88ca-6c51141ef498" LastKnownName="IFurniture" />
+            <elementDefinition Id="dd987fa0-0559-45ce-a4a9-8a04c08dd159" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="bec76bcd-cac8-4371-b26e-1060abde813a" name="Uid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="96344c2f-23fb-4ba0-8fb9-f2c63495018b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="422b714f-f6c7-414b-9a5d-fe0681294bb2" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="0a675eef-c26b-4d61-be11-327701de478f" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="79854596-c90a-472f-82b2-128ac14d76fb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f34d93f9-df5b-4885-9540-9426a5f55a24" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f34d93f9-df5b-4885-9540-9426a5f55a24" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="422b714f-f6c7-414b-9a5d-fe0681294bb2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a115acef-5059-4d48-9e6c-cd1caad77094" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9f9b300a-3825-469f-a246-dc0cc0626ac5" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="82dee0c8-3907-41da-9b50-805fceebb549" name="TestProject">
+    <elementDefinition Id="ea0f3921-bf3f-4124-ad47-efa007b7ddfd" />
+  </package>
+</logicalClassDesignerModel>
